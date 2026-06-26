@@ -1,0 +1,14 @@
+{
+  "name": "social-media-platform",
+  "version": "1.0.0",
+  "description": "Full Stack Social Media App",
+  "main": "index.js",
+  "scripts": {
+    "backend": "npm --prefix backend run dev",
+    "frontend": "live-server frontend",
+    "start": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}

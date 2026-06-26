@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile</title>
+
+    <link rel="stylesheet" href="css/profile.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+
+    <div class="logo">
+
+        <i class="fa-solid fa-users"></i>
+
+        Social Media
+
+    </div>
+
+    <div class="nav-links">
+
+        <a href="home.html">
+            <i class="fa-solid fa-house"></i>
+            Home
+        </a>
+
+        <a href="createPost.html">
+            <i class="fa-solid fa-square-plus"></i>
+            Create Post
+        </a>
+
+        <button onclick="logout()">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Logout
+
+        </button>
+
+    </div>
+
+</nav>
+
+<!-- ================= PROFILE ================= -->
+
+<div class="profile-container">
+
+    <!-- Cover -->
+
+    <div class="cover-photo"></div>
+
+    <!-- Profile Info -->
+
+    <div class="profile-info">
+
+        <img
+        id="profileImage"
+        src="https://ui-avatars.com/api/?name=User&background=1877f2&color=ffffff"
+        class="profile-pic">
+
+        <h2 id="userName">Loading...</h2>
+
+        <p id="userEmail"></p>
+
+        <p class="bio">
+
+            💬 Passionate Developer | MERN Stack | Web Designer
+
+        </p>
+
+        <button class="edit-btn">
+
+            <i class="fa-solid fa-user-pen"></i>
+
+            Edit Profile
+
+        </button>
+
+    </div>
+
+    <!-- Statistics -->
+
+    <div class="stats">
+
+        <div>
+
+            <h3 id="totalPosts">0</h3>
+
+            <p>Posts</p>
+
+        </div>
+
+        <div>
+
+            <h3 id="followers">0</h3>
+
+            <p>Followers</p>
+
+        </div>
+
+        <div>
+
+            <h3 id="following">0</h3>
+
+            <p>Following</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= MY POSTS ================= -->
+
+<section class="my-posts">
+
+    <h2>
+
+        <i class="fa-solid fa-images"></i>
+
+        My Posts
+
+    </h2>
+
+    <div id="posts" class="post-grid">
+
+    </div>
+
+</section>
+
+<footer>
+
+    © 2026 Social Media Platform | Developed by Saket Kumar
+
+</footer>
+
+<script src="js/profile.js"></script>
+
+</body>
+
+</html>

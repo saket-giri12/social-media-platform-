@@ -1,0 +1,815 @@
+/* ===========================================
+        GOOGLE FONT
+=========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(-45deg,#1877f2,#00b4d8,#42b72a,#6f42c1);
+
+    background-size:400% 400%;
+
+    animation:gradientBG 12s ease infinite;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+/* ==============================
+        BACKGROUND
+================================ */
+
+@keyframes gradientBG{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+body::before{
+
+content:"";
+
+position:absolute;
+
+width:320px;
+
+height:320px;
+
+background:rgba(255,255,255,.12);
+
+border-radius:50%;
+
+top:-100px;
+
+left:-100px;
+
+}
+
+body::after{
+
+content:"";
+
+position:absolute;
+
+width:260px;
+
+height:260px;
+
+background:rgba(255,255,255,.10);
+
+border-radius:50%;
+
+bottom:-80px;
+
+right:-80px;
+
+}
+
+/* ===========================================
+            MAIN CONTAINER
+=========================================== */
+
+.container{
+
+    width:1100px;
+
+    max-width:95%;
+
+    display:flex;
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.25);
+
+}
+
+/* ===========================================
+            LEFT PANEL
+=========================================== */
+
+.left{
+
+    width:50%;
+
+    color:white;
+
+    padding:60px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.left h1{
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+    font-weight:700;
+
+}
+
+.left p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+.left img{
+
+    width:260px;
+
+    animation:floatImage 4s ease-in-out infinite;
+
+}
+
+@keyframes floatImage{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+/* ===========================================
+            REGISTER CARD
+=========================================== */
+
+.register-card{
+
+    width:50%;
+
+    background:white;
+
+    padding:50px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ===========================================
+            PROFILE ICON
+=========================================== */
+
+.profile{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    background:#1877f2;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:38px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 10px 25px rgba(24,119,242,.35);
+
+}
+
+.register-card h2{
+
+    color:#222;
+
+    margin-bottom:8px;
+
+}
+
+.register-card p{
+
+    color:#777;
+
+    margin-bottom:25px;
+
+}
+/* ===========================================
+            INPUT BOX
+=========================================== */
+
+.input-box{
+
+    width:100%;
+
+    position:relative;
+
+    margin-bottom:20px;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    padding:15px 50px;
+
+    border:1px solid #ddd;
+
+    border-radius:50px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    background:#fff;
+
+}
+
+.input-box input:focus{
+
+    border-color:#1877f2;
+
+    box-shadow:0 0 10px rgba(24,119,242,.25);
+
+}
+
+/* Left Icon */
+
+.input-box i:first-child{
+
+    position:absolute;
+
+    left:20px;
+
+    top:17px;
+
+    color:#777;
+
+    font-size:16px;
+
+}
+
+/* Eye Icon */
+
+.eye1,
+.eye2{
+
+    position:absolute;
+
+    right:20px;
+
+    top:17px;
+
+    color:#777;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.eye1:hover,
+.eye2:hover{
+
+    color:#1877f2;
+
+}
+
+/* ===========================================
+            REGISTER BUTTON
+=========================================== */
+
+.register-card button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:linear-gradient(90deg,#1877f2,#0d6efd);
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    margin-top:10px;
+
+}
+
+.register-card button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(24,119,242,.30);
+
+}
+
+/* ===========================================
+            DIVIDER
+=========================================== */
+
+.divider{
+
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    margin:25px 0;
+
+}
+
+.divider::before,
+.divider::after{
+
+    content:"";
+
+    flex:1;
+
+    height:1px;
+
+    background:#ddd;
+
+}
+
+.divider span{
+
+    margin:0 15px;
+
+    color:#777;
+
+    font-size:14px;
+
+}
+
+/* ===========================================
+            LOGIN LINK
+=========================================== */
+
+.login-link{
+
+    font-size:15px;
+
+    color:#555;
+
+}
+
+.login-link a{
+
+    color:#1877f2;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.login-link a:hover{
+
+    color:#0d6efd;
+
+    text-decoration:underline;
+
+}
+
+/* ===========================================
+            INPUT ANIMATION
+=========================================== */
+
+.input-box input:hover{
+
+    border-color:#1877f2;
+
+}
+
+/* ===========================================
+            BUTTON ICON
+=========================================== */
+
+.register-card button i{
+
+    margin-right:8px;
+
+}
+
+/* ===========================================
+            PROFILE ICON ANIMATION
+=========================================== */
+
+.profile{
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.08);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+/* ===========================================
+            RESPONSIVE DESIGN
+=========================================== */
+
+@media (max-width:992px){
+
+.container{
+
+    flex-direction:column;
+
+    width:95%;
+
+}
+
+.left{
+
+    width:100%;
+
+    padding:40px;
+
+}
+
+.left img{
+
+    width:180px;
+
+}
+
+.register-card{
+
+    width:100%;
+
+    padding:40px;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.left{
+
+    display:none;
+
+}
+
+.register-card{
+
+    padding:35px 25px;
+
+}
+
+.profile{
+
+    width:75px;
+
+    height:75px;
+
+    font-size:32px;
+
+}
+
+.register-card h2{
+
+    font-size:28px;
+
+}
+
+.input-box input{
+
+    padding:14px 45px;
+
+}
+
+}
+
+@media (max-width:480px){
+
+.register-card{
+
+    padding:25px 18px;
+
+}
+
+.profile{
+
+    width:65px;
+
+    height:65px;
+
+    font-size:28px;
+
+}
+
+.register-card h2{
+
+    font-size:24px;
+
+}
+
+.register-card p{
+
+    font-size:14px;
+
+}
+
+.input-box input{
+
+    font-size:14px;
+
+    padding:13px 42px;
+
+}
+
+.register-card button{
+
+    font-size:15px;
+
+    padding:13px;
+
+}
+
+}
+
+/* ===========================================
+        HOVER EFFECTS
+=========================================== */
+
+.register-card{
+
+    transition:.4s;
+
+}
+
+.register-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.25);
+
+}
+
+.input-box{
+
+    transition:.3s;
+
+}
+
+.input-box:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* ===========================================
+        GLASS EFFECT
+=========================================== */
+
+.register-card{
+
+    backdrop-filter:blur(10px);
+
+}
+
+/* ===========================================
+        BUTTON EFFECT
+=========================================== */
+
+.register-card button{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.register-card button::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.25);
+
+    transition:.5s;
+
+}
+
+.register-card button:hover::before{
+
+    left:100%;
+
+}
+
+/* ===========================================
+        INPUT PLACEHOLDER
+=========================================== */
+
+input::placeholder{
+
+    color:#888;
+
+}
+
+/* ===========================================
+        SMOOTH TRANSITIONS
+=========================================== */
+
+*{
+
+    transition:.3s ease;
+
+}
+
+/* ===========================================
+        TEXT SELECTION
+=========================================== */
+
+::selection{
+
+    background:#1877f2;
+
+    color:white;
+
+}
+
+/* ===========================================
+        CUSTOM SCROLLBAR
+=========================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eee;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#1877f2;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#0d6efd;
+
+}
+
+/* ===========================================
+        FADE ANIMATION
+=========================================== */
+
+.register-card{
+
+    animation:fadeIn .8s ease;
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+}
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+}
+
+/* ===========================================
+        FLOATING SHADOW
+=========================================== */
+
+.profile{
+
+    box-shadow:0 15px 30px rgba(24,119,242,.35);
+
+}
+
+/* ===========================================
+        INPUT ACTIVE
+=========================================== */
+
+.input-box input:focus{
+
+    transform:scale(1.02);
+
+}
+
+/* ===========================================
+        END
+=========================================== */

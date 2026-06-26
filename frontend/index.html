@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Social Media</title>
+
+<link rel="stylesheet" href="css/index.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<button class="floating-btn" onclick="window.location.href='createPost.html'">
+    <i class="fa-solid fa-plus"></i>
+</button>
+<footer>
+    © 2026 Social Media Platform | Developed by Saket Kumar Giri
+</footer>
+
+<body>
+
+<!-- Navbar -->
+
+<nav>
+
+<div class="logo">
+<i class="fa-solid fa-camera"></i>
+Social Media
+</div>
+
+<div class="search-box">
+
+<input
+type="text"
+placeholder="Search Users">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</div>
+
+<div class="top-icons">
+
+<i class="fa-regular fa-heart"></i>
+
+<i class="fa-regular fa-bell"></i>
+
+<button onclick="logout()">Logout</button>
+
+</div>
+
+</nav>
+
+<!-- Main -->
+
+<div class="container">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h3>Menu</h3>
+
+<a href="home.html">
+🏠 Home
+</a>
+
+<a href="profile.html">
+👤 Profile
+</a>
+
+<a href="createPost.html">
+➕ Create Post
+</a>
+
+<a href="#">
+❤️ Favorites
+</a>
+
+<a href="#">
+⚙ Settings
+</a>
+
+</div>
+
+<!-- Feed -->
+
+<div class="feed">
+
+<div class="create-post">
+
+<h3>Create Post</h3>
+
+<textarea
+id="caption"
+placeholder="What's on your mind?"></textarea>
+
+<button onclick="createPost()">
+
+Share Post
+
+</button>
+
+</div>
+
+<div id="posts"></div>
+
+</div>
+
+</div>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>

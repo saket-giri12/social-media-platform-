@@ -1,0 +1,535 @@
+/* ===========================================
+        GOOGLE FONT
+=========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    background:linear-gradient(-45deg,#1877f2,#42b72a,#00b4d8,#6f42c1);
+
+    background-size:400% 400%;
+
+    animation:bg 10s ease infinite;
+
+}
+
+/* Animated Background */
+
+@keyframes bg{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+
+    height:70px;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 60px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#1877f2;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#333;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#1877f2;
+
+}
+
+.nav-links button{
+
+    background:#1877f2;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.nav-links button:hover{
+
+    background:#0d6efd;
+
+}
+
+/* ================= CONTAINER ================= */
+
+.container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px 20px;
+
+}
+
+/* ================= POST CARD ================= */
+
+.post-card{
+
+    width:650px;
+
+    max-width:100%;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+
+    animation:fade .8s ease;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ================= PROFILE ================= */
+
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+}
+
+.profile img{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    border:3px solid #1877f2;
+
+}
+
+.profile h3{
+
+    color:#222;
+
+}
+
+.profile p{
+
+    color:#777;
+
+}
+/* ===========================================
+            TEXTAREA
+=========================================== */
+
+textarea{
+
+    width:100%;
+
+    min-height:180px;
+
+    resize:none;
+
+    border:1px solid #ddd;
+
+    border-radius:15px;
+
+    padding:18px;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+    margin-bottom:20px;
+
+    background:#fafafa;
+
+}
+
+textarea:focus{
+
+    border-color:#1877f2;
+
+    box-shadow:0 0 10px rgba(24,119,242,.25);
+
+    background:white;
+
+}
+
+textarea::placeholder{
+
+    color:#888;
+
+}
+
+/* ===========================================
+            IMAGE PREVIEW
+=========================================== */
+
+.image-preview{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.image-preview img{
+
+    width:100%;
+
+    max-height:350px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    border:2px solid #ddd;
+
+    transition:.3s;
+
+}
+
+.image-preview img:hover{
+
+    transform:scale(1.02);
+
+}
+
+/* ===========================================
+            FILE INPUT
+=========================================== */
+
+input[type="file"]{
+
+    width:100%;
+
+    padding:12px;
+
+    border:2px dashed #1877f2;
+
+    border-radius:15px;
+
+    background:#f8fbff;
+
+    cursor:pointer;
+
+    margin-bottom:20px;
+
+    transition:.3s;
+
+}
+
+input[type="file"]:hover{
+
+    background:#eef5ff;
+
+}
+
+/* ===========================================
+            SHARE BUTTON
+=========================================== */
+
+.post-card button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:linear-gradient(90deg,#1877f2,#0d6efd);
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.post-card button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(24,119,242,.3);
+
+}
+
+.post-card button i{
+
+    margin-right:8px;
+
+}
+
+/* ===========================================
+            CARD HOVER
+=========================================== */
+
+.post-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 25px 45px rgba(0,0,0,.25);
+
+}
+
+/* ===========================================
+            FOOTER
+=========================================== */
+
+footer{
+
+    margin-top:50px;
+
+    padding:25px;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:15px;
+
+}
+
+/* ===========================================
+            RESPONSIVE
+=========================================== */
+
+@media(max-width:768px){
+
+nav{
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:15px;
+
+    gap:15px;
+
+}
+
+.nav-links{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.post-card{
+
+    padding:25px;
+
+}
+
+.profile{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.profile img{
+
+    width:60px;
+
+    height:60px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.container{
+
+    padding:25px 10px;
+
+}
+
+.post-card{
+
+    padding:20px;
+
+}
+
+.logo{
+
+    font-size:22px;
+
+}
+
+textarea{
+
+    min-height:150px;
+
+    font-size:15px;
+
+}
+
+.post-card button{
+
+    font-size:15px;
+
+    padding:13px;
+
+}
+
+}
+
+/* ===========================================
+            SCROLLBAR
+=========================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#1877f2;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f1f1f1;
+
+}
+
+/* ===========================================
+            TEXT SELECTION
+=========================================== */
+
+::selection{
+
+    background:#1877f2;
+
+    color:white;
+
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | Social Media</title>
+
+    <link rel="stylesheet" href="css/register.css">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Side -->
+
+    <div class="left">
+
+        <h1>Join Our Community</h1>
+
+        <p>
+
+            Create your free account and connect with friends,
+            share posts, like, comment and enjoy the social experience.
+
+        </p>
+
+        <img
+        src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+        alt="Social">
+
+    </div>
+
+    <!-- Right Side -->
+
+    <div class="register-card">
+
+        <div class="profile">
+
+            <i class="fa-solid fa-user-plus"></i>
+
+        </div>
+
+        <h2>Create Account</h2>
+
+        <p>Register to continue</p>
+
+        <!-- Name -->
+
+        <div class="input-box">
+
+            <i class="fa-solid fa-user"></i>
+
+            <input
+            type="text"
+            id="name"
+            placeholder="Full Name">
+
+        </div>
+
+        <!-- Email -->
+
+        <div class="input-box">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            <input
+            type="email"
+            id="email"
+            placeholder="Email Address">
+
+        </div>
+
+        <!-- Password -->
+
+        <div class="input-box">
+
+            <i class="fa-solid fa-lock"></i>
+
+            <input
+            type="password"
+            id="password"
+            placeholder="Password">
+
+            <i
+            class="fa-solid fa-eye eye1"
+            onclick="togglePassword('password','eye1')"></i>
+
+        </div>
+
+        <!-- Confirm Password -->
+
+        <div class="input-box">
+
+            <i class="fa-solid fa-lock"></i>
+
+            <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Confirm Password">
+
+            <i
+            class="fa-solid fa-eye eye2"
+            onclick="togglePassword('confirmPassword','eye2')"></i>
+
+        </div>
+
+        <button onclick="registerUser()">
+
+            <i class="fa-solid fa-user-plus"></i>
+
+            Create Account
+
+        </button>
+
+        <div class="divider">
+
+            <span>OR</span>
+
+        </div>
+
+        <p class="login-link">
+
+            Already have an account?
+
+            <a href="login.html">
+
+                Login
+
+            </a>
+
+        </p>
+
+    </div>
+
+</div>
+
+<script>
+
+function togglePassword(inputId,eyeClass){
+
+    const input=document.getElementById(inputId);
+
+    const eye=document.querySelector("." + eyeClass);
+
+    if(input.type==="password"){
+
+        input.type="text";
+
+        eye.classList.remove("fa-eye");
+
+        eye.classList.add("fa-eye-slash");
+
+    }
+
+    else{
+
+        input.type="password";
+
+        eye.classList.remove("fa-eye-slash");
+
+        eye.classList.add("fa-eye");
+
+    }
+
+}
+
+</script>
+
+<script src="js/register.js"></script>
+
+</body>
+
+</html>

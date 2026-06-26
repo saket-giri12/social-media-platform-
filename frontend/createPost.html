@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Post</title>
+
+    <link rel="stylesheet" href="css/Post.css">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+
+    <div class="logo">
+
+        <i class="fa-solid fa-users"></i>
+
+        Social Media
+
+    </div>
+
+    <div class="nav-links">
+
+        <a href="home.html">
+
+            <i class="fa-solid fa-house"></i>
+
+            Home
+
+        </a>
+
+        <a href="profile.html">
+
+            <i class="fa-solid fa-user"></i>
+
+            Profile
+
+        </a>
+
+        <button onclick="logout()">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Logout
+
+        </button>
+
+    </div>
+
+</nav>
+
+<!-- ================= CREATE POST ================= -->
+
+<div class="container">
+
+    <div class="post-card">
+
+        <div class="profile">
+
+            <img
+            id="profileImage"
+            src="https://ui-avatars.com/api/?name=User&background=1877f2&color=ffffff">
+
+            <div>
+
+                <h3 id="userName">User</h3>
+
+                <p>Create a new post</p>
+
+            </div>
+
+        </div>
+
+        <textarea
+        id="caption"
+        placeholder="What's on your mind?"></textarea>
+
+        <div class="image-preview">
+
+            <img id="preview" src="" style="display:none;">
+
+        </div>
+
+        <input
+        type="file"
+        id="image"
+        accept="image/*"
+        onchange="previewImage(event)">
+
+        <button onclick="createPost()">
+
+            <i class="fa-solid fa-paper-plane"></i>
+
+            Share Post
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    © 2026 Social Media Platform | Developed by Saket Kumar
+
+</footer>
+
+<script src="js/Post.js"></script>
+
+</body>
+
+</html>
